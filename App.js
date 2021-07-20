@@ -15,27 +15,9 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 import RegisterScreen from "./app/screens/RegisterScreen";
 
 
-const categories = [
-  { label: "Furniture", value: 1 },
-  { label: "Clothing", value: 2 },
-  { label: "Cameras", value: 3 },
-];
 
 export default function App() {
-  const [category, setCategory] = useState(categories[0]);
-
   return (
-    <RegisterScreen />
+    <ListingEditScreen />
   )
 }
-
-  // <Screen>
-  //   <AppPicker
-  //     selectedItem={category}
-  //     onSelectItem={(item) => setCategory(item)}
-  //     items={categories}
-  //     icon="apps"
-  //     placeholder="Category"
-  //   />
-  //   <AppTextInput icon="email" placeholder="Email" />
-  // </Screen>
