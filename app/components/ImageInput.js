@@ -10,8 +10,12 @@ function ImageInput({ imageUri, onChangeImage }) {
   }, []);
 
   const requestPermission = async () => {
-    const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (!granted) alert("You need to enable permission to access the library.")
+    try {
+      const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+      if (!granted) alert("You need to enable permission to access the library.")
+    } catch (error) {
+      console.log('error', error)
+    }
   };
 
   const handlePress = () => {

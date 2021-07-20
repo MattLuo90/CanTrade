@@ -79,6 +79,7 @@ const categories = [
 ];
 
 function ListingEditScreen() {
+
   const location = useLocation();
 
   return (
