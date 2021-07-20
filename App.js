@@ -11,6 +11,7 @@ import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
 import AppPicker from "./app/components/AppPicker";
 import LoginScreen from "./app/screens/LoginScreen";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 
 const categories = [
@@ -23,7 +24,7 @@ export default function App() {
   const [category, setCategory] = useState(categories[0]);
 
   return (
-    <LoginScreen />
+    <ListingEditScreen />
   )
 }
 
