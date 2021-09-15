@@ -27,7 +27,7 @@ const get = async (key) => {
     const value = await AsyncStorage.getItem(prefix + key);
     const item = JSON.parse(value);
 
-    if (!item) return null;
+    if (!item) return console.log('null');
 
     if (isExpired(item)) {
       await AsyncStorage.removeItem(prefix + key);
@@ -43,5 +43,5 @@ const get = async (key) => {
 
 export default {
   store,
-  get
-}
+  get,
+};
