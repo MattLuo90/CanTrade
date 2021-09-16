@@ -16,6 +16,7 @@ const menuItems = [
       name: "format-list-bulleted",
       backgroundColor: colors.primary,
     },
+    targetScreen: routes.LISTINGS,
   },
   {
     title: "My Messages",
@@ -36,7 +37,7 @@ function AccountScreen({ navigation }) {
         <ListItem
           title={user.name}
           subTitle={user.email}
-          image={require("../assets/mosh.jpg")}
+          image={require("../assets/Matt.jpg")}
         />
       </View>
       <View style={styles.container}>

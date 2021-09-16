@@ -8,6 +8,7 @@ import AuthNavigator from "./app/navigation/AuthNavigator"
 import OfflineNotice from "./app/components/OfflineNotice";
 import AuthContext from "./app/auth/context";
 import authStorage from "./app/auth/storage";
+// import logger from "./app/utility/logger";
 
 
 export default function App() {
